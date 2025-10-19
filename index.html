@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <article
+      class="profile-card"
+      data-testid="test-profile-card"
+      aria-label="User profile card"
+    >
+      <figure class="avatar">
+        <img
+          src="./image/IMG_1954.JPG"
+          alt="User avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="profile-content">
+        <header>
+          <h2 data-testid="test-user-name">Chiamaka Aniago</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Frontend developer and physiotherapy student who enjoys creating
+          digital tools that make learning and wellness more interactive.
+        </p>
+
+        <p>
+          <strong>Current Time (ms):</strong>
+          <span id="user-time" data-testid="test-user-time"></span>
+        </p>
+
+        <nav aria-label="Social links">
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://x.com/big_amaks"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/bigamaks"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/chiamaka-aniago"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding projects</li>
+            <li>Reading</li>
+            <li>Listening to music</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Overcrowded spaces</li>
+            <li>Bugs in code 😅</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="app.js"></script>
+  </body>
+</html>
