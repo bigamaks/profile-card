@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+   <main class="contact-container">
+     <h2>Contact Us</h2>
+    <p>Have a question or message? Fill out the form below and we’ll get back to you.</p>
+      <form id="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="contact-name">Full Name</label>
+          <input 
+            type="text" 
+            id="contact-name" 
+            data-testid="test-contact-name" 
+            aria-describedby="test-contact-error-name" 
+            required
+          />
+          <small id="test-contact-error-name" class="error-message"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-email">Email Address</label>
+          <input 
+            type="email" 
+            id="contact-email" 
+            data-testid="test-contact-email" 
+            aria-describedby="test-contact-error-email" 
+            required
+          />
+          <small id="test-contact-error-email" class="error-message"></small>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="contact-subject">Subject</label>
+        <input 
+          type="text" 
+          id="contact-subject" 
+          data-testid="test-contact-subject" 
+          aria-describedby="test-contact-error-subject" 
+          required
+        />
+        <small id="test-contact-error-subject" class="error-message"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="contact-message">Message</label>
+        <textarea 
+          id="contact-message" 
+          data-testid="test-contact-message" 
+          aria-describedby="test-contact-error-message" 
+          rows="5" 
+          minlength="10"
+          required
+        ></textarea>
+        <small id="test-contact-error-message" class="error-message"></small>
+      </div>
+
+      <button 
+        type="submit" 
+        id="contact-submit" 
+        data-testid="test-contact-submit"
+      >
+        SEND MESSAGE
+      </button>
+
+      <p id="test-contact-success" class="success-message"></p>
+    </form>
+   </main>
+
+   <script src="contact.js"></script>
+</body>
+</html>
